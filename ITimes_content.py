@@ -7,7 +7,7 @@ import tweepy
 
 
 #function for getting a random quote.
-def get_random_quote(quotes_file='/Users/shashwathbhaskar/cpp:c vs code/ITimes/quotes_temp.csv'):# load motivational quotes from csv file 
+def get_random_quote(quotes_file='quotes_temp.csv'):# load motivational quotes from csv file 
     try: # load motivational quotes from csv file 
        with open(quotes_file) as csvfile:
            quotes = [{'author': line[0],
