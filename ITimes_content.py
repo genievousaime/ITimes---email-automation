@@ -76,9 +76,9 @@ if __name__ == '__main__':
     ##### test get_twitter_trends() #####
     print('\nTesting Twitter trends retrieval...')
 
-    trends = get_twitter_trends() # get trends for default location of United States
+    trends = get_twitter_trends() # get trends for default location of India
     if trends:
-        print('\nTop 10 Twitter trends in the United States are...')
+        print('\nTop 10 Twitter trends in India are...')
         for trend in trends[0:10]: # show top ten
             print(f' - {trend["name"]}: {trend["url"]}')
 
