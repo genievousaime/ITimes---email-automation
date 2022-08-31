@@ -21,7 +21,7 @@ class ITimes_Email:
     def send_email(self):
         # build email message
         msg = EmailMessage()
-        msg['Subject'] = f'Daily Digest - {datetime.date.today().strftime("%d %b %Y")}'
+        msg['Subject'] = f'Your Daily Digest is here!!!- {datetime.date.today().strftime("%d %b %Y")}'
         msg['From'] = self.sender_credentials['email']
         msg['To'] = ', '.join(self.recipients_list)
 
@@ -72,7 +72,8 @@ class ITimes_Email:
         html = f"""<html>
     <body>
     <center>
-        <h1>Daily Digest - {datetime.date.today().strftime('%d %b %Y')}</h1>
+        <h1>ITimes</h1>
+        <h2>your own Daily Digest - {datetime.date.today().strftime('%d %b %Y')}</h2>
         """
 
         # format random quote
