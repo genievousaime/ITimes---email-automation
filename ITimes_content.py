@@ -50,7 +50,7 @@ def get_twitter_trends(woeid=2295407): # default WOEID for INDIA
         api_key = 'ZlJRDgHE97PDymRGrqpHXTcLz'
         api_secret_key = 'Bqw4sexqoEOV26BAWl5StkNJwTJTcNatGFdHtgznBeDWMAzScM'
         auth = tweepy.AppAuthHandler(api_key, api_secret_key)
-        return tweepy.API(auth).trends_place(woeid)[0]['trends'] # NOTE: Tweepy 4.0.0 renamed the 'trends_place' method to 'get_place_trends'
+        return tweepy.API(auth).get_place_trends(woeid)[0]['trends'] # NOTE: Tweepy 4.0.0 renamed the 'trends_place' method to 'get_place_trends'
 
     except Exception as e:
         print(e)
