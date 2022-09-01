@@ -44,7 +44,7 @@ class ITimes_Email:
         ##############################
         ##### Generate Plaintext #####
         ##############################
-        text = f'*~*~*~*~* Daily Digest - {datetime.date.today().strftime("%d %b %Y")} *~*~*~*~*\n\n'
+        text = f'*~*~*~*~* ITimes - Daily Digest - {datetime.date.today().strftime("%d %b %Y")} *~*~*~*~*\n\n'
 
         # format random quote
         if self.content['quote']['include'] and self.content['quote']['content']:
