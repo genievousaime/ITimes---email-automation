@@ -17,5 +17,5 @@
 2) Shireen Jain
 3) Shashwath Bhaskar
 4) Urvi Kashyap
-5) Shewtambara Sahay
+5) Shwetambara Sahay
 
